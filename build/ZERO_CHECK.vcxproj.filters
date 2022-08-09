@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\SamiDhiab\Theion_Repos\keyence_sdk\build\CMakeFiles\90648433c739f8e4eaea275dad26a212\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{14CC47C1-9504-3A7C-A740-36F7B79F190D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
