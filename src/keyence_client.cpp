@@ -1,6 +1,6 @@
 #include "keyence_client.h"
 
-keyence_client::keyence_client(const char* ip = "192.168.0.104") :IP(ip) {}
+keyence_client::keyence_client(const char* ip ) :IP(ip) {}
 void keyence_client::connect()
 {
 

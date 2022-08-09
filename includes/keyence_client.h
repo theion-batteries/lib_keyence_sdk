@@ -13,7 +13,7 @@ class keyence_client
     RC Val;
     double LastValue;
     public:
-    keyence_client(const char* ip);
+    keyence_client(const char* ip= "192.168.0.104");
     void connect();
     double get_value_output(int outputNr);
 
