@@ -1,5 +1,7 @@
 #pragma once
+
 #define _AFXDLL // this is now the first item in the file.
+
 #ifndef _SECURE_ATL
 #define _SECURE_ATL 1
 #endif
@@ -27,15 +29,10 @@
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 #define _AFX_ALL_WARNINGS
-
 #include <afxwin.h>
+
 #include <afxext.h>
-
-
 #include <afxdisp.h>
-
-
-
 #ifndef _AFX_NO_OLE_SUPPORT
 #include <afxdtctl.h>
 #endif

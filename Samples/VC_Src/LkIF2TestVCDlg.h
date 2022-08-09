@@ -22,7 +22,7 @@ public:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV
 
 
-// ŽÀ‘•
+// ï¿½ï¿½ï¿½ï¿½
 protected:
 	HICON m_hIcon;
 
