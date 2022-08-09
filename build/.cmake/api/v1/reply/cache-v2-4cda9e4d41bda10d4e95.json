@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "whs_controller"
+			"value" : "keyence_sdk"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1064,6 +1064,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "keyence_sdk_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build"
+		},
+		{
+			"name" : "keyence_sdk_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "keyence_sdk_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk"
 		},
 		{
 			"name" : "whs_controller_BINARY_DIR",

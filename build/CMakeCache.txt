@@ -112,7 +112,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=whs_controller
+CMAKE_PROJECT_NAME:STATIC=keyence_sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -199,6 +199,15 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+keyence_sdk_BINARY_DIR:STATIC=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build
+
+//Value Computed by CMake
+keyence_sdk_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+keyence_sdk_SOURCE_DIR:STATIC=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk
 
 //Value Computed by CMake
 whs_controller_BINARY_DIR:STATIC=C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build
