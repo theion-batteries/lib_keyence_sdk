@@ -13,19 +13,14 @@ void keyence_client::connect()
     }
     std::cout << "open connection to " << IP << std::endl;
     RC Conn = LKIF2_OpenDeviceETHER(&paramEther);
+    if (Conn == RC_OK)
+        std::cout << "connection success" << std::endl;
+
 }
 double keyence_client::get_value_output(int outputNr)
 {
-    if (Conn == RC_OK)
-    {
         LKIF_FLOATVALUE_OUT value;
         RC Val = LKIF2_GetCalcDataSingle((outputNr), &value);
-        if (Val == RC_OK)
-        {
-            std::cout << "get value outputnr:" << value.OutNo << " Value:" << value.Value << std::endl;
-            return value.Value;
-        }
-    }
-
-
+        std::cout << "get value outputnr:" << value.OutNo << " Value:" << value.Value << std::endl;
+        return value.Value;
 }

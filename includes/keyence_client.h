@@ -11,6 +11,7 @@ class keyence_client
     const char* IP;
     RC Conn;
     RC Val;
+    double LastValue;
     public:
     keyence_client(const char* ip);
     void connect();

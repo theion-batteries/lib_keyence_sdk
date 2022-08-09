@@ -34,10 +34,10 @@
     <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\main.cpp">
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\keyence_client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\keyence_client.cpp">
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
