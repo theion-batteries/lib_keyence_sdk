@@ -1,7 +1,7 @@
 #include "keyence_client.h"
 
 keyence_client::keyence_client(const char* ip ) :IP(ip) {}
-void keyence_client::connect()
+enum_hw_feedback keyence_client::connect()
 {
 
     std::cout << "connecting to keyence keyence controller via tcp" << std::endl;
@@ -15,6 +15,8 @@ void keyence_client::connect()
     RC Conn = LKIF2_OpenDeviceETHER(&paramEther);
     if (Conn == RC_OK)
         std::cout << "connection success" << std::endl;
+        return enum_hw_feedback::hw_success;
+    return enum_hw_feedback::hw_error;
 
 }
 double keyence_client::get_value_output(int outputNr)
