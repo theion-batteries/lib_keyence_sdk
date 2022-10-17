@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build"
+			"value" : "c:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk"
+			"value" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1066,20 +1066,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "KEYENCE_BUILD_STATIC",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Build static library"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-<<<<<<< HEAD:build/.cmake/api/v1/reply/cache-v2-8a7f1128d132bfc60b02.json
-=======
 			"name" : "keyence_sdk_BINARY_DIR",
 			"properties" : 
 			[
@@ -1089,7 +1075,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build"
+			"value" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build"
 		},
 		{
 			"name" : "keyence_sdk_IS_TOP_LEVEL",
@@ -1104,7 +1090,6 @@
 			"value" : "ON"
 		},
 		{
->>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f:build/.cmake/api/v1/reply/cache-v2-22bf529c5bc5b140aedd.json
 			"name" : "keyence_sdk_SOURCE_DIR",
 			"properties" : 
 			[
@@ -1114,11 +1099,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<< HEAD:build/.cmake/api/v1/reply/cache-v2-8a7f1128d132bfc60b02.json
 			"value" : "C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk"
-=======
-			"value" : "C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk"
->>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f:build/.cmake/api/v1/reply/cache-v2-22bf529c5bc5b140aedd.json
 		}
 	],
 	"kind" : "cache",

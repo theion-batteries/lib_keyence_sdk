@@ -37,9 +37,6 @@
     <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\keyence_client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\CMakeLists.txt" />

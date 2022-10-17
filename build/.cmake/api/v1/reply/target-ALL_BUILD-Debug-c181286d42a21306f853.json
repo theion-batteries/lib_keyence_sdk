@@ -17,17 +17,13 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"id" : "keyence_sdk::@6890427a1f51a3e7e1df"
 		},
 		{
-<<<<<<< HEAD:build/.cmake/api/v1/reply/target-ALL_BUILD-Debug-c181286d42a21306f853.json
 			"id" : "keyence_lib_static::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-=======
-			"id" : "keyence_sdk::@6890427a1f51a3e7e1df"
->>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f:build/.cmake/api/v1/reply/target-ALL_BUILD-Release-7644b8cda7da7321cdc3.json
 		}
 	],
 	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",

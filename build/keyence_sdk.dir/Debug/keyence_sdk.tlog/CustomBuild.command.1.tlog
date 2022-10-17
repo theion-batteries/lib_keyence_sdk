@@ -1,10 +1,6 @@
-^C:\USERS\SAMIDHIAB\THEION_REPOS\SOFT_WAFER_HOLDER_SYSTEM_CONTROLLER\DEPENDENCIES\LIB_KEYENCE_SDK\CMAKELISTS.TXT
+^C:\USERS\SAMIDHIAB\THEION_REPOS\LIB_KEYENCE_SDK\CMAKELISTS.TXT
 setlocal
-<<<<<<< HEAD
 C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/generate.stamp
-=======
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/generate.stamp
->>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
