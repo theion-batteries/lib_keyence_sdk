@@ -211,15 +211,12 @@ KEYENCE_BUILD_STATIC:BOOL=ON
 //Value Computed by CMake
 keyence_sdk_BINARY_DIR:STATIC=C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build
 
-<<<<<<< HEAD
-=======
 //Value Computed by CMake
 keyence_sdk_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 keyence_sdk_SOURCE_DIR:STATIC=C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk
 
->>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f
 
 ########################
 # INTERNAL cache entries
