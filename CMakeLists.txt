@@ -26,7 +26,6 @@ file(GLOB all_SRCS
 add_library(keyence_lib_static STATIC ${all_SRCS})
 # add .exe
 add_executable(keyence_sdk ${all_SRCS})
-
-
 # link againt static lib
 target_link_libraries(keyence_sdk ${PROJECT_SOURCE_DIR}/Samples/VC_Src/Libx64/LKIF2.lib)
+target_link_libraries(keyence_lib_static ${PROJECT_SOURCE_DIR}/Samples/VC_Src/Libx64/LKIF2.lib)
