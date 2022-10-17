@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.33.31629:TargetPlatformVersion=10.0.19041.0:VcpkgTriplet=x64-windows:
 Debug|x64|C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\|
+=======
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionMFC=14.29.30136:TargetPlatformVersion=10.0.19041.0:VcpkgTriplet=x64-windows:
+Debug|x64|C:\Users\SamiDhiab\Theion_Repos\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\|
+>>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f

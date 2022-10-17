@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/keyence_sdk.dir
 C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/keyence_lib_static.dir
 C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/ZERO_CHECK.dir
+=======
+C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/keyence_sdk.dir
+C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/SamiDhiab/Theion_Repos/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/ZERO_CHECK.dir
+>>>>>>> 1c40c6fce16b7b5cc64a1b051ff09440d58d5b5f

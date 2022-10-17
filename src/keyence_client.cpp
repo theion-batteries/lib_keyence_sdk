@@ -1,7 +1,7 @@
 #include "keyence_client.h"
 
-keyence_client::keyence_client(const char* ip = "192.168.0.104") :IP(ip) {}
-void keyence_client::connect()
+keyence_client::keyence_client(const char* ip ) :IP(ip) {}
+enum_hw_feedback keyence_client::connect()
 {
 
     std::cout << "connecting to keyence keyence controller via tcp" << std::endl;
@@ -15,12 +15,24 @@ void keyence_client::connect()
     RC Conn = LKIF2_OpenDeviceETHER(&paramEther);
     if (Conn == RC_OK)
         std::cout << "connection success" << std::endl;
+        return enum_hw_feedback::hw_success;
+    return enum_hw_feedback::hw_error;
 
 }
 double keyence_client::get_value_output(int outputNr)
 {
-        LKIF_FLOATVALUE_OUT value;
         RC Val = LKIF2_GetCalcDataSingle((outputNr), &value);
-        std::cout << "get value outputnr:" << value.OutNo << " Value:" << value.Value << std::endl;
+        if (DataIsValid())
+        {
+         std::cout << "get valid data from output number: " << outputNr << " Value:" << value.Value << std::endl;
         return value.Value;
+        }
+        std::cout << "invalid datafrom output number: " << outputNr  << " Value:" << value.Value << std::endl;
+        return NULL;
+}
+bool keyence_client::DataIsValid()
+{
+     if (value.FloatResult == LKIF_FLOATRESULT_VALID) return true;
+     return false;
+
 }
