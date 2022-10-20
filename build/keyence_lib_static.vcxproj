@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B177CE61-930E-3CA0-82B5-2BF1A14667FF}</ProjectGuid>
+    <ProjectGuid>{923F4473-4658-3A4A-B89B-565436CB03D7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">keyence_lib_static.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">keyence_lib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">keyence_lib_static.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">keyence_lib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">keyence_lib_static.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">keyence_lib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">keyence_lib_static.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">keyence_lib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -96,10 +96,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -130,10 +130,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,7 +146,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -164,10 +164,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,7 +180,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -197,10 +197,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\includes;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,11 +212,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/generate.stamp
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -224,12 +224,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/generate.stamp
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -237,12 +237,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/generate.stamp
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -250,12 +250,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/lib_keyence_sdk/build/CMakeFiles/generate.stamp
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk -BC:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build --check-stamp-file C:/Users/SamiDhiab/Theion_Repos/software_wgm_v2_cpp/dependencies/soft_wafer_holder_system_controller/dependencies/lib_keyence_sdk/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -263,29 +263,28 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgGetTab1.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgGetTab2.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgMeasureCtlTab.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgModeTab.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgOtherTab.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgSetTab1.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\DlgSetTab2.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\LKIF2Tools.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\LkIF2TestVC.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\LkIF2TestVCDlg.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\Samples\VC_Src\stdafx.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\keyence_client.cpp" />
-    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\src\main.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgGetTab1.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgGetTab2.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgMeasureCtlTab.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgModeTab.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgOtherTab.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgSetTab1.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\DlgSetTab2.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\LKIF2Tools.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\LkIF2TestVC.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\LkIF2TestVCDlg.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\Samples\VC_Src\stdafx.cpp" />
+    <ClCompile Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\src\keyence_client.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\SamiDhiab\Theion_Repos\lib_keyence_sdk\build\ZERO_CHECK.vcxproj">
-      <Project>{8AA9F416-F85E-3AF4-B8AE-5902DDA81F43}</Project>
+    <ProjectReference Include="C:\Users\SamiDhiab\Theion_Repos\software_wgm_v2_cpp\dependencies\soft_wafer_holder_system_controller\dependencies\lib_keyence_sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{311DA53A-4E4B-377E-95DF-511E27F92EB4}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

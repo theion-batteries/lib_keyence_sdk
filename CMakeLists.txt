@@ -7,7 +7,7 @@ project(keyence_sdk VERSION "1.0")
 # set the C++17 standard
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 #This is necessary for MSVC to create a symbol file, .lib, besides a shared library, .dll
 if (MSVC)
@@ -18,14 +18,18 @@ endif()
 include_directories(${PROJECT_SOURCE_DIR}/includes/)
 include_directories(${PROJECT_SOURCE_DIR}/Samples/VC_Src/)
 # source *.cpp
-file(GLOB all_SRCS
+file(GLOB exe_SRCS
 		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
 		"${PROJECT_SOURCE_DIR}/src/*.cpp"
 )
-
-add_library(keyence_lib_static STATIC ${all_SRCS})
+file(GLOB lib_SRCS
+		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
+		"${PROJECT_SOURCE_DIR}/src/keyence_client.cpp"
+)
+add_library(keyence_lib_static STATIC ${lib_SRCS})
 # add .exe
-add_executable(keyence_sdk ${all_SRCS})
+add_executable(keyence_exe ${exe_SRCS})
 # link againt static lib
-target_link_libraries(keyence_sdk ${PROJECT_SOURCE_DIR}/Samples/VC_Src/Libx64/LKIF2.lib)
+target_link_libraries(keyence_exe ${PROJECT_SOURCE_DIR}/build/Debug/LKIF2.lib)
+
 target_link_libraries(keyence_lib_static ${PROJECT_SOURCE_DIR}/Samples/VC_Src/Libx64/LKIF2.lib)
