@@ -14,22 +14,32 @@ if (MSVC)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif()
 
-# include libs
-include_directories(${PROJECT_SOURCE_DIR}/includes/)
-include_directories(${PROJECT_SOURCE_DIR}/Samples/VC_Src/)
-# source *.cpp
-file(GLOB exe_SRCS
-		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
-		"${PROJECT_SOURCE_DIR}/src/*.cpp"
-)
+###################### Build Library ############################
+
 file(GLOB lib_SRCS
 		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
 		"${PROJECT_SOURCE_DIR}/src/keyence_client.cpp"
 )
 add_library(keyence_lib_static STATIC ${lib_SRCS})
-# add .exe
-add_executable(keyence_exe ${exe_SRCS})
-# link againt static lib
-target_link_libraries(keyence_exe ${PROJECT_SOURCE_DIR}/build/Debug/LKIF2.lib)
 
-target_link_libraries(keyence_lib_static ${PROJECT_SOURCE_DIR}/Samples/VC_Src/Libx64/LKIF2.lib)
+target_link_libraries(keyence_lib_static ${CMAKE_CURRENT_SOURCE_DIR}/libs/LKIF2.lib)
+
+target_include_directories(keyence_lib_static 
+PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
+PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
+PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/libs/
+)
+
+############################# build executable  ###################################
+
+## source *.cpp
+#file(GLOB exe_SRCS
+#		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
+#		"${PROJECT_SOURCE_DIR}/src/*.cpp"
+#)
+#
+## add .exe
+#add_executable(keyence_exe ${exe_SRCS})
+## link againt static lib
+#target_link_libraries(keyence_exe ${PROJECT_SOURCE_DIR}/build/Debug/LKIF2.lib)
+
