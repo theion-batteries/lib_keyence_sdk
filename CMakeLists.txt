@@ -13,12 +13,13 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 if (MSVC)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif()
+###################### find library #############################
 
 ###################### Build Library ############################
 
 file(GLOB lib_SRCS
-		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
-		"${PROJECT_SOURCE_DIR}/src/keyence_client.cpp"
+		"${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
+		"${CMAKE_CURRENT_SOURCE_DIR}/src/keyence_client.cpp"
 )
 add_library(keyence_lib_static STATIC ${lib_SRCS})
 
@@ -32,14 +33,19 @@ PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/libs/
 
 ############################# build executable  ###################################
 
-## source *.cpp
-#file(GLOB exe_SRCS
-#		"${PROJECT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
-#		"${PROJECT_SOURCE_DIR}/src/*.cpp"
-#)
-#
-## add .exe
-#add_executable(keyence_exe ${exe_SRCS})
-## link againt static lib
-#target_link_libraries(keyence_exe ${PROJECT_SOURCE_DIR}/build/Debug/LKIF2.lib)
+
+file(GLOB exe_SRCS
+		"${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
+		"${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+)
+add_executable(keyence_exe ${exe_SRCS})
+
+link_directories(keyence_exe "C:/src/vcpkg/installed/x64-windows/lib/libs")
+
+target_link_libraries(keyence_exe "C:/src/vcpkg/installed/x64-windows/lib/libs/LKIF2.lib") 
+
+target_include_directories(keyence_exe 
+PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
+PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
+)
 

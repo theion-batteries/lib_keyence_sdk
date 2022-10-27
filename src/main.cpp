@@ -1,7 +1,7 @@
 #include "keyence_client.h"
-
 int main()
 {
+  std::cout<<"test main keyence "<<std::endl;
   const char* ip = "192.168.0.104";
    keyence_client Kclient(ip);
    Kclient.connect();
