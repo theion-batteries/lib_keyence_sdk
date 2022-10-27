@@ -14,6 +14,18 @@ if (MSVC)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif()
 ###################### find library #############################
+find_library( 
+	KEYENCE_LIB 
+	NAMES LKIF2.lib LKIF2.dll CmnLib.dll KeyUsbDrv.dll
+	PATH "C:/src/vcpkg/installed/x64-windows/lib/libs"
+	REQUIRED
+)
+find_path(
+  KEYENCE_DIR
+  NAMES LKIF2.h
+  PATH "C:/src/vcpkg/installed/x64-windows/lib/libs/VC_Src" ${CMAKE_INSTALL_INCLUDEDIR}
+)
+list(APPEND CMAKE_MODULE_PATH "C:/src/vcpkg/installed/x64-windows/lib/libs")
 
 ###################### Build Library ############################
 
@@ -23,12 +35,17 @@ file(GLOB lib_SRCS
 )
 add_library(keyence_lib_static STATIC ${lib_SRCS})
 
-target_link_libraries(keyence_lib_static ${CMAKE_CURRENT_SOURCE_DIR}/libs/LKIF2.lib)
+target_link_libraries(keyence_lib_static ${KEYENCE_LIB})
 
 target_include_directories(keyence_lib_static 
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
-PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/libs/
+)
+set_target_properties(
+    keyence_lib_static
+    PROPERTIES
+      INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
+      IMPORTED_LOCATION ${KEYENCE_LIB}
 )
 
 ############################# build executable  ###################################
@@ -40,12 +57,16 @@ file(GLOB exe_SRCS
 )
 add_executable(keyence_exe ${exe_SRCS})
 
-link_directories(keyence_exe "C:/src/vcpkg/installed/x64-windows/lib/libs")
-
-target_link_libraries(keyence_exe "C:/src/vcpkg/installed/x64-windows/lib/libs/LKIF2.lib") 
+target_link_libraries(keyence_exe ${KEYENCE_LIB})
 
 target_include_directories(keyence_exe 
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
 )
 
+set_target_properties(
+    keyence_exe
+    PROPERTIES
+      INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
+      IMPORTED_LOCATION ${KEYENCE_LIB}
+)
