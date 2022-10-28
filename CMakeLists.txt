@@ -17,15 +17,15 @@ endif()
 find_library( 
 	KEYENCE_LIB 
 	NAMES LKIF2.lib LKIF2.dll CmnLib.dll KeyUsbDrv.dll
-	PATH "C:/src/vcpkg/installed/x64-windows/lib/libs"
+	PATH "C:/vcpkg/installed/x64-windows/lib/libs"
 	REQUIRED
 )
 find_path(
   KEYENCE_DIR
   NAMES LKIF2.h
-  PATH "C:/src/vcpkg/installed/x64-windows/lib/libs/VC_Src" ${CMAKE_INSTALL_INCLUDEDIR}
+  PATH "C:/vcpkg/installed/x64-windows/lib/libs/VC_Src" ${CMAKE_INSTALL_INCLUDEDIR}
 )
-list(APPEND CMAKE_MODULE_PATH "C:/src/vcpkg/installed/x64-windows/lib/libs")
+list(APPEND CMAKE_MODULE_PATH "C:/vcpkg/installed/x64-windows/lib/libs")
 
 ###################### Build Library ############################
 
