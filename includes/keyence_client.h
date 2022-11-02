@@ -23,6 +23,7 @@ public:
     enum_hw_feedback connect();
     double get_value_output(int outputNr);
     bool DataIsValid();
+    void disconnect();
 
 };
 

@@ -24,6 +24,7 @@ enum_hw_feedback keyence_client::connect()
         return enum_hw_feedback::hw_error;
     }
 
+
 }
 double keyence_client::get_value_output(int outputNr)
 {
@@ -41,4 +42,9 @@ bool keyence_client::DataIsValid()
     if (value.FloatResult == LKIF_FLOATRESULT_VALID) return true;
     return false;
 
+}
+
+void keyence_client::disconnect()
+{
+    LKIF2_CloseDevice();
 }
