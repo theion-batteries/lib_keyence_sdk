@@ -1,7 +1,7 @@
 #include "keyence_client.h"
 
 keyence_client::keyence_client(const char* ip) :IP(ip) {}
-enum_hw_feedback keyence_client::connect()
+wgm_feedbacks::enum_hw_feedback keyence_client::connect()
 {
 
     std::cout << "connecting to keyence keyence controller via tcp" << std::endl;
@@ -16,12 +16,12 @@ enum_hw_feedback keyence_client::connect()
     if (Conn == RC_OK)
     {
         std::cout << "keyence connection success" << std::endl;
-        return enum_hw_feedback::hw_success;
+        return wgm_feedbacks::enum_hw_feedback::hw_success;
     }
     else
     {
         std::cout << "keyence connection failed" << std::endl;
-        return enum_hw_feedback::hw_error;
+        return wgm_feedbacks::enum_hw_feedback::hw_error;
     }
 
 
