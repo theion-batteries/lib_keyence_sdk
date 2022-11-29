@@ -47,7 +47,11 @@ set_target_properties(
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
-
+############################# install target lib ########################################
+install(TARGETS keyence_lib_static DESTINATION lib)
+FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h" 
+)
+INSTALL(FILES ${files} DESTINATION include)
 ############################# build executable  ###################################
 
 
