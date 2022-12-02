@@ -59,22 +59,26 @@ set_target_properties(
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
+# copy dlls one by one 
+function(copy_dlls_target_dir target_exe)
+add_custom_command(TARGET ${target_exe} POST_BUILD
+COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:LKIF2dll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
+COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:CmnLibdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
+COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:KeyUsbDrvdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
+COMMAND_EXPAND_LISTS
+
+    )
+endfunction()
 ############################# install target lib ########################################
 install(TARGETS keyence_lib_static DESTINATION lib)
 FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
 )
 INSTALL(FILES ${files} DESTINATION include/keyence_lib_static/)
-install(DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+install(DIRECTORY ${CMAKE_BINARY_DIR}
   DESTINATION bin
   FILES_MATCHING PATTERN "*.dll")
-# copy dlls one by one 
-add_custom_command(TARGET keyence_lib_static POST_BUILD
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:LKIF2dll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}$<CONFIG> 
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:CmnLibdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}$<CONFIG> 
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:KeyUsbDrvdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}$<CONFIG> 
-COMMAND_EXPAND_LISTS
 
-    )
+
 
 ############################# build executable  ###################################
 
@@ -98,14 +102,7 @@ set_target_properties(
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
-
-add_custom_command(TARGET keyence_exe POST_BUILD
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:LKIF2dll> $<TARGET_FILE_DIR:keyence_exe>
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:CmnLibdll> $<TARGET_FILE_DIR:keyence_exe>
-COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:KeyUsbDrvdll> $<TARGET_FILE_DIR:keyence_exe>
-COMMAND_EXPAND_LISTS
-
-    )
+copy_dlls_target_dir(keyence_exe)
 
 
 
