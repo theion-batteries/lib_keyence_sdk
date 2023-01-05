@@ -65,18 +65,23 @@ add_custom_command(TARGET ${target_exe} POST_BUILD
 COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:LKIF2dll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
 COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:CmnLibdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
 COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:KeyUsbDrvdll> ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} 
-COMMAND_EXPAND_LISTS
-
-    )
+COMMAND_EXPAND_LISTS)
 endfunction()
+
+
 ############################# install target lib ########################################
-install(TARGETS keyence_lib_static DESTINATION lib)
+install(TARGETS keyence_lib_static DESTINATION lib
+RUNTIME DESTINATION bin
+
+)
+
+copy_dlls_target_dir(keyence_lib_static)
+
 FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
 )
-INSTALL(FILES ${files} DESTINATION include/keyence_lib_static/)
-install(DIRECTORY ${CMAKE_BINARY_DIR}
-  DESTINATION bin
-  FILES_MATCHING PATTERN "*.dll")
+install(FILES ${files} DESTINATION include/keyence_lib_static/)
+FILE(GLOB keyence_dlls  "${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/Libx64/*.dll"  )
+install(FILES ${keyence_dlls} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}  )
 
 
 
@@ -102,8 +107,6 @@ set_target_properties(
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
-copy_dlls_target_dir(keyence_exe)
 
 
 
-     
