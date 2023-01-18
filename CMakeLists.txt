@@ -75,7 +75,7 @@ RUNTIME DESTINATION bin
 
 )
 
-#copy_dlls_target_dir(keyence_lib_static)
+copy_dlls_target_dir(keyence_lib_static)
 
 FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
 )
@@ -109,4 +109,5 @@ set_target_properties(
 )
 
 
+copy_dlls_target_dir(keyence_exe)
 
