@@ -68,23 +68,7 @@ COMMAND ${CMAKE_COMMAND} -E copy_if_different  $<TARGET_FILE:KeyUsbDrvdll> $<TAR
 COMMAND_EXPAND_LISTS)
 endfunction()
 
-
-############################# install target lib ########################################
-install(TARGETS keyence_lib_static DESTINATION lib
-)
-
-copy_dlls_keyence_target_destination(keyence_lib_static)
-
-FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
-)
-install(FILES ${files} DESTINATION include/keyence_lib_static/)
-FILE(GLOB keyence_dlls  "${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/Libx64/*.dll"  )
-install(FILES ${keyence_dlls} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-
-
-
 ############################# build executable  ###################################
-
 
 file(GLOB exe_SRCS
 		"${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
@@ -106,6 +90,19 @@ set_target_properties(
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
 
-
 copy_dlls_keyence_target_destination(keyence_exe)
+
+
+############################# install target lib ########################################
+install(TARGETS keyence_lib_static DESTINATION lib
+)
+
+copy_dlls_keyence_target_destination(keyence_lib_static)
+
+FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
+)
+install(FILES ${files} DESTINATION include/keyence_lib_static/)
+FILE(GLOB keyence_dlls  "${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/Libx64/*.dll"  )
+install(FILES ${keyence_dlls} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
 
