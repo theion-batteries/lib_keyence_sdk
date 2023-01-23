@@ -103,6 +103,6 @@ FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
 )
 install(FILES ${files} DESTINATION include/keyence_lib_static/)
 FILE(GLOB keyence_dlls  "${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/Libx64/*.dll"  )
-install(FILES ${keyence_dlls} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+install(FILES ${keyence_dlls} DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 
