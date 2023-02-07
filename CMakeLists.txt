@@ -45,16 +45,16 @@ file(GLOB lib_SRCS
 		"${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/src/keyence_client.cpp"
 )
-add_library(keyence_lib_static STATIC ${lib_SRCS})
+add_library(keyenceLib STATIC ${lib_SRCS})
 
-target_link_libraries(keyence_lib_static ${KEYENCE_LIB} ${LKIF2dll} ${CmnLibdll} ${KeyUsbDrvdll} )
+target_link_libraries(keyenceLib ${KEYENCE_LIB} ${LKIF2dll} ${CmnLibdll} ${KeyUsbDrvdll} )
 
-target_include_directories(keyence_lib_static 
+target_include_directories(keyenceLib 
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
 )
 set_target_properties(
-    keyence_lib_static
+    keyenceLib
     PROPERTIES
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
@@ -74,34 +74,34 @@ file(GLOB exe_SRCS
 		"${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/*.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
-add_executable(keyence_exe ${exe_SRCS})
+add_executable(keyenceBin ${exe_SRCS})
 
-target_link_libraries(keyence_exe ${KEYENCE_LIB} ${LKIF2dll} ${CmnLibdll} ${KeyUsbDrvdll})
+target_link_libraries(keyenceBin ${KEYENCE_LIB} ${LKIF2dll} ${CmnLibdll} ${KeyUsbDrvdll})
 
-target_include_directories(keyence_exe 
+target_include_directories(keyenceBin 
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/includes/
 PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/
 )
 
 set_target_properties(
-    keyence_exe
+    keyenceBin
     PROPERTIES
       INTERFACE_INCLUDE_DIRECTORIES ${KEYENCE_DIR}
       IMPORTED_LOCATION ${KEYENCE_LIB}
 )
 
-copy_dlls_keyence_target_destination(keyence_exe)
+copy_dlls_keyence_target_destination(keyenceBin)
 
 
 ############################# install target lib ########################################
-install(TARGETS keyence_lib_static DESTINATION lib
+install(TARGETS keyenceLib DESTINATION lib
 )
 
-copy_dlls_keyence_target_destination(keyence_lib_static)
+copy_dlls_keyence_target_destination(keyenceLib)
 
 FILE(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/includes/*.h"  "${KEYENCE_DIR}/*.h"
 )
-install(FILES ${files} DESTINATION include/keyence_lib_static/)
+install(FILES ${files} DESTINATION include/keyenceLib/)
 FILE(GLOB keyence_dlls  "${CMAKE_CURRENT_SOURCE_DIR}/Samples/VC_Src/Libx64/*.dll"  )
 install(FILES ${keyence_dlls} DESTINATION ${CMAKE_INSTALL_BINDIR})
 
