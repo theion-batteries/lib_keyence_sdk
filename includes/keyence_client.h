@@ -8,17 +8,18 @@
 class keyence_client
 {
 private:
-    const char* IP = "192.168.0.104";
+    std::string IP = "192.168.0.104";
     RC Conn;
     RC Val;
     double LastValue;
     LKIF_FLOATVALUE_OUT value;
 public:
-    keyence_client(const char* ip );
+    keyence_client(std::string ip );
     wgm_feedbacks::enum_hw_feedback connect();
     double get_value_output(int outputNr);
     bool DataIsValid();
     void disconnect();
+    double get_value_all();
 
 };
 
