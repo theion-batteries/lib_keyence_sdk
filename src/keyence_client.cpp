@@ -46,7 +46,7 @@ double keyence_client::get_value_all()
     RC Val = LKIF2_GetCalcDataALL(all, &value);
     if (DataIsValid())
     {
-        std::cout << "get valid data from output number: " << all << " Value:" << value.Value << std::endl;
+        std::cout << "get valid data from output number: " << *all << " Value:" << value.Value << std::endl;
         return value.Value;
     }
     std::cout << "invalid datafrom output number: " << all << " Value:" << value.Value << std::endl;

@@ -8,6 +8,7 @@ int main()
    Kclient.get_value_output(0);
    Kclient.get_value_output(1);
    Kclient.get_value_output(2);
-
+    Kclient.get_value_all();
+    Kclient.disconnect();
     return 0;
 }
