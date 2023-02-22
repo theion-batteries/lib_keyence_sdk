@@ -1,4 +1,5 @@
 #include "keyence_client.h"
+
 int main()
 {
   std::cout<<"test main keyence "<<std::endl;
@@ -8,7 +9,6 @@ int main()
    Kclient.get_value_output(0);
    Kclient.get_value_output(1);
    Kclient.get_value_output(2);
-    Kclient.get_value_all();
     Kclient.disconnect();
     return 0;
 }
