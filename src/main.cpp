@@ -1,4 +1,5 @@
 #include "keyence_client.h"
+
 int main()
 {
    std::cout << "test main keyence "
